@@ -1,6 +1,5 @@
 #!/bin/bash
 
-/lib/systemd/systemd
 touch sample.txt
 #Backup
 mv -f /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.backup

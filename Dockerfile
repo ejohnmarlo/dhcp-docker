@@ -16,4 +16,4 @@ RUN chmod +x util/entrypoint.sh
 
 ENTRYPOINT ["util/entrypoint.sh"]
 
-CMD ["tail',"-f","/dev/null"]
+CMD ["tail","-f","/dev/null"]

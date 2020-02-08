@@ -8,7 +8,7 @@ RUN apt-get -y update \
 && /lib/systemd/systemd \
 && apt-get -y autoremove \
 && apt-get -y clean \
-&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR root
 

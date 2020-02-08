@@ -12,4 +12,4 @@ WORKDIR root
 
 COPY util util
 
-CMD [“util/entrypoint.sh"]
+CMD [“/bin/bash","util/entrypoint.sh"]

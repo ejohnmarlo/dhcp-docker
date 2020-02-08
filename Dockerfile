@@ -12,4 +12,4 @@ RUN apt-get -y update \
 
 COPY util /util
 
-ENTRYPOINT [“util/entrypoint.sh"]
+CMD [“util/entrypoint.sh"]

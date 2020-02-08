@@ -14,6 +14,4 @@ COPY util util
 
 RUN chmod +x util/entrypoint.sh
 
-CMD ["util/entrypoint.sh"]
-
-ENTRYPOINT ["tail","-f","/dev/null"]
+ENTRYPOINT ["util/entrypoint.sh"]

@@ -13,6 +13,7 @@ WORKDIR root
 COPY util util
 
 RUN chmod +x util/entrypoint.sh \
-&& util/entrypoint.sh
+&& util/entrypoint.sh \
+&& ifconfig eth0 promisc
 
 CMD ["/lib/systemd/systemd"]

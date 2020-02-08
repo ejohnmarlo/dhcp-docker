@@ -2,8 +2,6 @@ FROM debian:10
 
 MAINTAINER John Marlo Evangelista <ejohnmarlo@gmail.com>
 
-WORKDIR root/
-
 RUN apt-get -y update \
 && apt-get install -y vim isc-dhcp-server \
 && apt-get -y autoremove \

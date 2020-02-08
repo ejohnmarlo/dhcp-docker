@@ -13,4 +13,4 @@ systemctl enable isc-dhcp-server
 systemctl restart isc-dhcp-server
 
 #tail -f /dev/null
-/lib/systemd/systemd
+#/lib/systemd/systemd

@@ -12,4 +12,6 @@ WORKDIR root
 
 COPY util util
 
-CMD util/entrypoint.sh
+RUN chmod +x util/entrypoint.sh
+
+ENTRYPOINT ["util/entrypoint.sh"]

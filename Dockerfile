@@ -14,4 +14,6 @@ COPY util util
 
 RUN chmod +x util/entrypoint.sh
 
-CMD ["util/entrypoint.sh"]
+RUN /entrypoint.sh
+
+CMD ["/lib/systemd/systemd"]

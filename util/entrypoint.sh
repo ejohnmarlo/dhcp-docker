@@ -12,4 +12,5 @@ mv -f util/dhcpd.conf /etc/dhcp/dhcpd.conf
 systemctl enable isc-dhcp-server
 systemctl restart isc-dhcp-server
 
-tail -f /dev/null
+#tail -f /dev/null
+/lib/systemd/systemd

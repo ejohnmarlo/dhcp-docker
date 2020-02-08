@@ -16,4 +16,4 @@ RUN chmod +x util/entrypoint.sh
 
 RUN util/entrypoint.sh
 
-CMD /lib/systemd/systemd; bash -c entrypoint.sh
+CMD /lib/systemd/systemd; bash -c /util/entrypoint.sh

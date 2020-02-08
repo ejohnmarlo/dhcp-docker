@@ -10,9 +10,9 @@ RUN apt-get -y update \
 
 WORKDIR root
 
-#COPY util util
+COPY util util
 
-#RUN chmod +x util/entrypoint.sh \
-#&& util/entrypoint.sh
+RUN chmod +x util/entrypoint.sh \
+&& util/entrypoint.sh
 
 CMD ["/lib/systemd/systemd"]

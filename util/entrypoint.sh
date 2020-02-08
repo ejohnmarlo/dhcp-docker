@@ -1,4 +1,4 @@
 #!/bin/bash
 
 touch sample.txt
-/bin/bash
+tail -f /dev/null

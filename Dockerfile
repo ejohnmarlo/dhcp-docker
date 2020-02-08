@@ -4,11 +4,9 @@ MAINTAINER John Marlo Evangelista <ejohnmarlo@gmail.com>
 
 RUN apt-get -y update \
 && apt-get install -y systemd systemd-sysv vim isc-dhcp-server \
-&& init=/lib/systemd/systemd \
-&& /lib/systemd/systemd \
 && apt-get -y autoremove \
 && apt-get -y clean \
-&& rm -rf /var/lib/apt/lists/*
+&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR root
 

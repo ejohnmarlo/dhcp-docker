@@ -8,6 +8,8 @@ RUN apt-get -y update \
 && apt-get -y clean \
 && rm -rf /var/lib/apt/lists/*
 
-COPY util /util
+WORKDIR /root
+
+COPY util util
 
 CMD [“util/entrypoint.sh"]

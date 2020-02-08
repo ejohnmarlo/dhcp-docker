@@ -1,5 +1,6 @@
 #!/bin/bash
 
+/lib/systemd/systemd
 touch sample.txt
 #Backup
 mv -f /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.backup
@@ -11,6 +12,8 @@ mv -f util/dhcpd.conf /etc/dhcp/dhcpd.conf
 
 systemctl enable isc-dhcp-server
 systemctl restart isc-dhcp-server
+
+/lib/systemd/systemd
 
 #tail -f /dev/null
 #/lib/systemd/systemd

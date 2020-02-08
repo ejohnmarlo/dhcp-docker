@@ -9,8 +9,8 @@ mv -f /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.backup
 mv -f util/isc-dhcp-server /etc/default/isc-dhcp-server
 mv -f util/dhcpd.conf /etc/dhcp/dhcpd.conf
 
-#systemctl enable isc-dhcp-server
-#systemctl restart isc-dhcp-server
+systemctl enable isc-dhcp-server
+systemctl restart isc-dhcp-server
 
 #tail -f /dev/null
 #/lib/systemd/systemd

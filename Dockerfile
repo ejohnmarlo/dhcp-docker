@@ -10,8 +10,6 @@ RUN apt-get -y update \
 && apt-get -y clean \
 && rm -rf /var/lib/apt/lists/*
 
-COPY config /config
+COPY util /util
 
-COPY util/entrypoint.sh /entrypoint.sh
-
-ENTRYPOINT [“/entrypoint.sh"]
+ENTRYPOINT [“util/entrypoint.sh"]

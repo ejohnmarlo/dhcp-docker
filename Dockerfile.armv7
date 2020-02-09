@@ -3,7 +3,7 @@ FROM raspbian/stretch
 MAINTAINER John Marlo Evangelista <ejohnmarlo@gmail.com>
 
 RUN apt-get -y update \
-&& apt-get install -y systemd nano isc-dhcp-server net-tools \
+&& apt-get install -y systemd nano isc-dhcp-server \
 && apt-get -y autoremove \
 && apt-get -y clean \
 && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

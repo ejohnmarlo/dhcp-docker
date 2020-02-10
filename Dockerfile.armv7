@@ -1,4 +1,4 @@
-FROM raspbian/stretch
+FROM arm32v7/ubuntu
 
 MAINTAINER John Marlo Evangelista <ejohnmarlo@gmail.com>
 
